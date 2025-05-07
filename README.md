@@ -54,17 +54,21 @@ The application follows the MVC pattern, uses a DAO layer for database access, a
 ### Steps
 
 1. Clone the repository and open in your IDE:
+
    git clone https://github.com/NikitaTolstykh/Admin-Panel-Full-stack-Web-App-.git
    
-2. Create a MySQL Database:
+3. Create a MySQL Database:
+
    CREATE DATABASE admin_panel_db;
    
-3. Configure database connection:
+4. Configure database connection:
+
    db.url=jdbc:mysql://localhost:3306/admin_panel_db
    db.username=your_mysql_username
    db.password=your_mysql_password
 
-4. Build the project with Maven:
+5. Build the project with Maven:
+ 
    Add next dependencies:
     <dependencies>
         <dependency>
@@ -99,27 +103,12 @@ The application follows the MVC pattern, uses a DAO layer for database access, a
 
     </dependencies>
     
-5. Run the app:
+6. Run the app:
    (http://localhost:8080/admin/main)
 
 ### Project Structure
- 
-  admin-panel/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/example/adminpanel/
-│   │   │       ├── admins/       # Servlets which are used for registration aln login
-│   │   │       ├── Entity/              # DAO layer, models
-│   │   │       ├── users/            # Servlets which are used for actions on users
-│   │   │       └── DButil/             # Database configuration
-│   │   ├── webapp/
-│   │   │   ├── WEB-INF/
-│   │   │   └── views/                # JSP pages
-│   │   └── resources/
-│   │       └── db.properties
-├── pom.xml
-└── README.md
+![image](https://github.com/user-attachments/assets/83e105a3-6efa-4aeb-8865-cc641f938114)
+
 
 
 ![image](https://github.com/user-attachments/assets/7e2c88c0-51ed-456a-b378-c57cc5ed6aa1)
